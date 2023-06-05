@@ -1,3 +1,4 @@
+// creo l'array con gli oggetti
 const bicycle = [
     {
         'name': 'Bianchi',
@@ -29,13 +30,25 @@ const bicycle = [
 console.log(bicycle)
 let nome= ''
 let peso= 0
+let bike= ''
+let finalBike = ''
 
+// individuo la bicicletta più leggera all'interno dell'array
+for (let i = 0; i < bicycle.length; i++){
+    let lightBike = bicycle[0]
+    let control = bicycle[i]
+    if (control.weight < lightBike.weight ){
+        lightBike = control
+        console.log(lightBike)
+        finalBike= lightBike 
+    }
+}
+console.log (finalBike)
 
-
-
+// estraggo le informazioni dall'array e le stampo in console
 bicycle.forEach((bike)=>{
     let {name, weight} = bike
-    if (weight < 4) {
+    if (weight === finalBike.weight) {
         nome= bike.name
         peso=bike.weight
         console.log( `Il modello di bici più leggero è ${nome} e pesa solo ${peso}kg`)
