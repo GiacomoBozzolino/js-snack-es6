@@ -57,4 +57,18 @@ const newScore = footballTeam.map((element )=>{
 console.log(newScore)
 
 
-// creo un nuovo array
+// creo un nuovo array vuoto
+const foulPlay = []
+
+newScore.forEach ((team) =>{
+    let {nome, falliSubiti} = team;
+
+    let obj ={
+        nome,
+        falliSubiti,
+    }
+
+    foulPlay.push(obj)
+})
+
+console.log(foulPlay)
