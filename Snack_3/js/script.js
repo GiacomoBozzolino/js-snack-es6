@@ -30,7 +30,7 @@ const bicycle = [
 console.log(bicycle)
 let nome= ''
 let peso= 0
-let bike= ''
+// let bike= ''
 let finalBike = ''
 
 // individuo la bicicletta più leggera all'interno dell'array
@@ -39,7 +39,7 @@ for (let i = 0; i < bicycle.length; i++){
     let control = bicycle[i]
     if (control.weight < lightBike.weight ){
         lightBike = control
-        console.log(lightBike)
+      
         finalBike= lightBike 
     }
 }
