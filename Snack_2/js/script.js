@@ -42,7 +42,7 @@ console.log(student)
 
 // utilizzo map per creare un nuovo array con i nomi degli studenti con solo lettere maiuscole
 let list = student.map((item)=>{
-    nome = item.name
+   let nome = item.name
     // console.log(nome)
     let nameUpper = nome.toUpperCase()
     return nameUpper
@@ -59,7 +59,7 @@ let second_list = student.filter((item)=>{
 console.log(second_list)
 
 let nameSecondList=second_list.map((item)=>{
-    nome = item.name
+    let nome = item.name
     return nome
 })
 
@@ -74,7 +74,7 @@ if ((item.grades > 70) && (item.id > 120)) {
 console.log(third_list)
 
 let nameThirdList=third_list.map((item)=>{
-    nome = item.name
+    let nome = item.name
     return nome
 })
 
